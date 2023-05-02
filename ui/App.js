@@ -1,8 +1,9 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
-import { Texts } from '../infra/constants';
+import { Home } from './pages/Home';
 
 export const App = () => (
   <div>
-    <h1>{Texts.HOME_TITLE}</h1>
+    <Home />
   </div>
 );
