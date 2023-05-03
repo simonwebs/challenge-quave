@@ -80,10 +80,12 @@ The page needs to be reactive -- no refresh should be needed to display the late
 - Is your solution ready to be reviewed? So respond to this [form](https://forms.gle/aJAQMzdJ3Wm48gbU9).
 - Our team will review your submission and provide feedback via PR or email in 15 work days.
 
+## What I added to it.
+
 - I created api folder and place the communities and people collection in it.
  - I created methods folder and place the methods in it. name them communities and peopleMethods.
  -  I created publication folder and create publication to handle the data. communities and peoplePublication.
  -  I imported the methods and publication in the main.js file.
   -  In the ui, I created a folder called hooks and place the hooks in it. I created a folder called pages and place the selector folder and home in it.
 
-link the deploy project: https://simon-quave-challenge.meteorapp.com/
+link to the deployed project: https://simon-quave-challenge.meteorapp.com/
