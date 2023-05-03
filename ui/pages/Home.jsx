@@ -6,6 +6,7 @@ import { EventSelector } from './EventSelector';
 import { Texts } from '../../infra/constants';
 
 // Format the given date string
+// Accessibility: Ensure date format is understandable for all users
 const formatDate = (date) => {
   if (!date) return 'N/A';
   const d = new Date(date);
@@ -18,6 +19,9 @@ function classNames(...classes) {
 }
 
 // Home component
+// SEO: Use proper heading hierarchy, add alt text for images, and use descriptive link text
+// Optimization: Use memoization, pagination, or virtualized lists for large datasets
+// Best Practices: Follow established patterns, write tests, and document components
 export const Home = () => {
   // State for the selected event
   const [selectedEvent, setSelectedEvent] = useState('');
@@ -64,7 +68,7 @@ export const Home = () => {
   return (
     // Rest of the JSX code
   <>
-    <div className="relative isolate overflow-hidden bg-gray-100 py-12 sm:py-24">
+     <div className="relative isolate overflow-hidden bg-gray-100 py-12 sm:py-24">
       <div className="container mx-auto px-4">
         <header className="mb-12">
           <h2 className="text-4xl font-bold tracking-tight text-gray-500 sm:text-4xl mb-4">{Texts.HOME_TITLE}</h2>
@@ -72,7 +76,7 @@ export const Home = () => {
         </header>
         <main className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <section className="border border-gray-300 p-4">
-            <h3 className="text-xl text-gray-600 font-bold">Summary</h3>
+                        <h3 className="text-xl text-gray-600 font-bold">Summary</h3>
             <p className="mt-6 text-lg leading-8 text-gray-500">People in the event right now: <span className='text-lg p-2 text-indigo-600'>{peopleInEventNow}</span></p>
             <p className="mt-6 text-lg leading-8 text-gray-600">People by company in the event right now:<span className='text-lg p-2 text-indigo-600'>{companyStats}</span></p>
             <p className="mt-6 text-lg leading-8 text-gray-700">People not checked-in: <span className='text-lg p-2 text-indigo-600'>{peopleNotCheckedIn}</span></p>
@@ -111,4 +115,4 @@ export const Home = () => {
     </div>
   </>
 );
-            }
+}
